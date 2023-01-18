@@ -1,0 +1,17 @@
+a=list(map(int,input().split()))
+b=int(input())
+l1=[]
+l2=[]
+for i in range(0,len(a)):
+    for j in range(1):
+        c=a[i:i+b]
+        if len(c)==b:
+            l1.append(c)
+        else:
+            break
+#print(l1)
+for k in l1:
+    print(k)
+    c=max(k)
+    l2.append(c)
+print(l2)
